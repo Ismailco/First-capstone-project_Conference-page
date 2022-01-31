@@ -46,6 +46,11 @@ header {
   padding-left: 20px;
   padding-bottom: 54px;
   background-color: rgba(211, 211, 211, 0.96);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
 }
 
 .hello {
@@ -92,8 +97,13 @@ header {
 
 /* logo section */
 
-.main {
+.main_section {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
 }
 
 .main_header {
@@ -127,12 +137,18 @@ header {
 }
 
 /* last festivals */
-.hr {
-  width: 100%;
+.h_line {
+  width: 100% !important;
+  border: solid 1px #d3d3d3 !important;
 }
 
 .past_festivals {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
 }
 
 .past_festivals_header {
@@ -163,8 +179,8 @@ header {
   margin-bottom: 50px;
   background-image: url(../img/background_2.png);
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 80%;
+  background-size: cover;
+  width: 70%;
 }
 
 .card_two {
@@ -172,14 +188,13 @@ header {
   margin-bottom: 50px;
   background-image: url(../img/background_1.png);
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 80%;
+  background-size: cover;
+  width: 70%;
 }
 
 .card div {
   padding: 90px;
   background-color: rgba(236, 82, 66, 0.6);
-  margin-top: 20px;
 }
 
 .card h3 {

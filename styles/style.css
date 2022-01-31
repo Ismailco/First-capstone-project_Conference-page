@@ -21,6 +21,10 @@ body {
   font-size: 15px;
 }
 
+header {
+  background-color: #fff;
+}
+
 .menu_btn {
   background: none;
   outline: none;
@@ -28,7 +32,6 @@ body {
   font-size: 25px;
   margin-top: 20px;
   margin-left: 20px;
-  position: fixed;
   color: #272a31;
 }
 
@@ -36,7 +39,7 @@ body {
   background-image: url(../img/background_1.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .headline_container {
@@ -44,6 +47,7 @@ body {
   padding-left: 20px;
   padding-bottom: 54px;
   background-color: rgba(255, 255, 255, 0.9);
+  height: 100vh;
 }
 
 .hello {
@@ -64,16 +68,16 @@ body {
 
 .headline_header {
   text-transform: uppercase;
-  max-width: 450px;
-  margin-top: 10px;
+  max-width: 400px;
+  margin-top: 20px;
   font-family: cocogoose, sans-serif;
   font-size: 35px;
   line-height: 35px;
 }
 
 .headline_description {
-  max-width: 450px;
-  margin-top: 20px;
+  max-width: 400px;
+  margin-top: 40px;
   padding: 10px;
   border: solid 3px #fff;
   font-family: lato, sans-serif;
@@ -83,7 +87,7 @@ body {
   font-family: cocogoose, sans-serif;
   font-size: 24px;
   color: #272a31;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .headline_place {
