@@ -58,7 +58,7 @@ body {
   background-position: center;
   color: transparent;
   background-size: 100%;
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
 }
 
@@ -108,8 +108,6 @@ body {
   font-size: 20px;
   margin-top: 40px;
   color: #fff;
-  /* position: sticky;
-  position: -webkit-sticky; */
 }
 
 .main_section hr {
@@ -171,8 +169,6 @@ body {
   font-size: 20px;
   margin-top: 40px;
   color: #272a31;
-  /* position: sticky;
-  position: -webkit-sticky; */
 }
 
 .participants_section hr {

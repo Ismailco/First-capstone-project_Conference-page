@@ -31,7 +31,6 @@ header {
   font-size: 25px;
   margin-top: 20px;
   margin-left: 20px;
-  /* position: fixed; */
   color: #272a31;
 }
 
@@ -53,16 +52,6 @@ header {
   color: #ec5242;
   font-family: lato, sans-serif;
   font-size: 15px;
-}
-
-.headline_header_container {
-  background-image: url(../img/background_2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .headline_header {
