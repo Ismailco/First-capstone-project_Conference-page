@@ -1,11 +1,11 @@
 @font-face {
   font-family: cocogoose;
-  src: url(font/Cocogoose_trial.ttf);
+  src: url(../font/Cocogoose_trial.ttf);
 }
 
 @font-face {
   font-family: lato;
-  src: url(font/Lato-Regular.ttf);
+  src: url(../font/Lato-Regular.ttf);
 }
 
 * {
@@ -16,7 +16,6 @@
 }
 
 body {
-  background: #d3d3d3;
   font-family: lato, sans-serif;
   font-size: 15px;
 }
@@ -107,6 +106,12 @@ header {
   align-items: center;
 }
 
+.main_section .fa,
+.fab {
+  font-size: 40px;
+  color: #ec5242;
+}
+
 .main_header {
   font-family: lato, sans-serif;
   font-size: 20px;
@@ -166,6 +171,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .participants_header {
@@ -190,18 +196,26 @@ header {
 
 .participant {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 5px;
-  padding: 20px;
-  width: 95%;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-left: 30px;
+}
+
+.participant_dots {
+  width: 50px;
+  margin-right: 80px;
 }
 
 .participant_picture {
-  width: 150px;
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  position: relative;
+  left: 20px;
+  top: -35px;
 }
 
-.participant_artistic_name {
+.participant_style {
   color: #ec5242;
 }
 
@@ -214,8 +228,7 @@ header {
   background-color: #fff;
   color: #3d3d3d;
   padding: 17px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 50px;
   outline: none;
   border-radius: 1px;
   border: 1px solid #3d3d3d;
@@ -279,4 +292,15 @@ header {
 
 .footer_logo {
   width: 200px;
+}
+
+@media only screen and (min-width: 624px) {
+  .participant_dots {
+    margin-right: 0;
+  }
+
+  .participant_picture {
+    left: -35px;
+    top: 65px;
+  }
 }
