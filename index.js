@@ -37,7 +37,7 @@ participantBtn.setAttribute('type', 'button');
 participantBtn.innerHTML = 'MORE <i class="fa fa-arrow-down"></i>';
 participantBtn.addEventListener('click', () => {
   document.querySelector('.participants_section').innerHTML = '';
-  for (let i = 0; i < artistes.length; i++) {
+  for (let i = 0; i < artistes.length; i += 1) {
     const participant = document.createElement('article');
     const participantImg = document.createElement('div');
     const imageDots = document.createElement('img');
@@ -72,7 +72,7 @@ participantBtn.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 2; i += 1) {
     const participant = document.createElement('article');
     const participantImg = document.createElement('div');
     const imageDots = document.createElement('img');

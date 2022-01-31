@@ -80,6 +80,7 @@ header {
   padding: 10px;
   border: solid 3px #fff;
   font-family: lato, sans-serif;
+  line-height: 24px;
 }
 
 .headline_date {
