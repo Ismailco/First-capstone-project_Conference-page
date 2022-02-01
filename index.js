@@ -36,7 +36,7 @@ participantBtn.classList.add('participants_btn');
 participantBtn.setAttribute('type', 'button');
 participantBtn.innerHTML = 'MORE <i class="fa fa-arrow-down"></i>';
 participantBtn.addEventListener('click', () => {
-  document.querySelector('.participants_section').innerHTML = '';
+  document.querySelector('.participants_group').innerHTML = '';
   for (let i = 0; i < artistes.length; i += 1) {
     const participant = document.createElement('article');
     const participantImg = document.createElement('div');
@@ -67,7 +67,7 @@ participantBtn.addEventListener('click', () => {
     participantInfo.append(participantName, participantStyle, hr, participantAbout);
     participant.append(participantImg, participantInfo);
 
-    document.querySelector('.participants_section').append(participant);
+    document.querySelector('.participants_group').append(participant);
   }
 });
 
@@ -102,10 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
     participantInfo.append(participantName, participantStyle, hr, participantAbout);
     participant.append(participantImg, participantInfo);
 
-    document.querySelector('.participants_section').append(participant);
+    document.querySelector('.participants_group').append(participant);
   }
 
-  document.querySelector('.participants_section').append(participantBtn);
+  document.querySelector('.participants_group').append(participantBtn);
 });
 
 // mobile menu
@@ -118,7 +118,7 @@ mobileMenu.style.left = '-800px';
 mobileMenu.style.transition = 'left 800ms';
 
 // listen for a click on the menu button and X button
-menuButton.addEventListener('click', (e) => {
+menuButton.addEventListener('click', () => {
   mobileMenu.style.display = 'flex';
   setTimeout(() => {
     mobileMenu.style.left = '0px';
