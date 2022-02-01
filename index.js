@@ -107,3 +107,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelector('.participants_section').append(participantBtn);
 });
+
+// mobile menu
+const menuButton = document.querySelector('.menu_btn');
+const mobileMenu = document.querySelector('.nav_menu');
+const remButton = document.querySelector('.fa-times');
+
+// transition styles
+mobileMenu.style.left = '-800px';
+mobileMenu.style.transition = 'left 800ms';
+
+// listen for a click on the menu button and X button
+menuButton.addEventListener('click', (e) => {
+  mobileMenu.style.display = 'flex';
+  setTimeout(() => {
+    mobileMenu.style.left = '0px';
+  }, 1);
+});
+
+remButton.addEventListener('click', () => {
+  mobileMenu.style.left = '-800px';
+  setTimeout(() => {
+    mobileMenu.style.display = 'none';
+  }, 900);
+  menuButton.style.display = 'block';
+});
+
+document.querySelectorAll('.nav_link').forEach((link) => {
+  link.addEventListener('click', () => {
+    mobileMenu.style.left = '-800px';
+    setTimeout(() => {
+      mobileMenu.style.display = 'none';
+    }, 900);
+    menuButton.style.display = 'block';
+  });
+});

@@ -12,6 +12,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  max-width: 100vw;
 }
 
 body {
@@ -29,11 +30,54 @@ header {
   outline: none;
   border: none;
   font-size: 25px;
-  margin-top: 20px;
+  padding-top: 20px;
   margin-left: 20px;
   color: #272a31;
 }
 
+.close_btn {
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+
+.nav_menu {
+  z-index: 1;
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-image: url(../img/background_1.png);
+  background-size: cover;
+}
+
+.nav {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.8);
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  list-style: none;
+}
+
+.nav_item {
+  margin: 15px;
+}
+
+.nav_link {
+  color: #272a31;
+  font-size: 25px;
+}
+
+/* main section */
 .headline {
   background-image: url(../img/background_1.png);
   background-repeat: no-repeat;
