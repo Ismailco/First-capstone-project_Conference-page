@@ -10,18 +10,35 @@
     <title>Marock - The first Hard Rock festival in Morocco</title>
   </head>
   <body>
+    <div class="top_nav">
+      <ul class="top_nav_items">
+        <li class="top_nav_item"><i class="top_nav_link fab fa-facebook-f"></i></li>
+        <li class="top_nav_item"><i class="top_nav_link fab fa-twitter"></i></li>
+        <li class="top_nav_item"><a class="top_nav_link">English</a></li>
+        <li class="top_nav_item"><a class="top_nav_link">Logout</a></li>
+      </ul>
+    </div>
     <header class="header">
       <button class="menu_btn" type="button">
         <i class="fas fa-bars"></i>
       </button>
       <img class="logo" src="img/icons/logo1.png" alt="logo" />
       <nav class="nav_menu">
-        <i class="fa fa-times close_btn"></i>
+        <!-- <i class="fa fa-times close_btn"></i> -->
         <ul class="nav">
           <li class="nav_item"><a href="#headline" class="nav_link">Home</a></li>
           <li class="nav_item"><a href="#main" class="nav_link">Program</a></li>
           <li class="nav_item"><a href="#participants" class="nav_link">Participants</a></li>
           <li class="nav_item"><a href="about.html" class="nav_link">About</a></li>
+        </ul>
+      </nav>
+      <nav class="nav_menu_mobile">
+        <i class="fa fa-times close_btn"></i>
+        <ul class="nav_mobile">
+          <li class="nav_item_mobile"><a href="#headline" class="nav_link_mobile">Home</a></li>
+          <li class="nav_item_mobile"><a href="#main" class="nav_link_mobile">Program</a></li>
+          <li class="nav_item_mobile"><a href="#participants" class="nav_link_mobile">Participants</a></li>
+          <li class="nav_item_mobile"><a href="about.html" class="nav_link_mobile">About</a></li>
         </ul>
       </nav>
     </header>
@@ -43,31 +60,33 @@
       <section id="main" class="main_section">
         <h2 class="main_header">Main Program</h2>
         <hr />
-        <article class="main_program_act">
-          <i class="fa fa-guitar"></i>
-          <h3 class="program_act">Rock</h3>
-          <p class="program_act_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione earum accusamus excepturi dolores? Facere hic provident libero porro</p>
-        </article>
-        <article class="main_program_act">
-          <i class="fa fa-hand-peace"></i>
-          <h3 class="program_act">Metal</h3>
-          <p class="program_act_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione earum accusamus excepturi dolores? Facere hic provident libero porro</p>
-        </article>
-        <article class="main_program_act">
-          <i class="fa fa-compact-disc"></i>
-          <h3 class="program_act">Rap</h3>
-          <p class="program_act_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione earum accusamus excepturi dolores? Facere hic provident libero porro</p>
-        </article>
-        <article class="main_program_act">
-          <i class="fab fa-deezer"></i>
-          <h3 class="program_act">Fusion</h3>
-          <p class="program_act_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione earum accusamus excepturi dolores? Facere hic provident libero porro</p>
-        </article>
-        <article class="main_program_act">
-          <i class="fa fa-microphone"></i>
-          <h3 class="program_act">Workshop</h3>
-          <p class="program_act_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione earum accusamus excepturi dolores? Facere hic provident libero porro</p>
-        </article>
+        <div class="main_section_program">
+          <article class="main_program_act">
+            <i class="fa fa-guitar"></i>
+            <h3 class="program_act">Rock</h3>
+            <p class="program_act_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione earum accusamus excepturi dolores? Facere hic provident libero porro</p>
+          </article>
+          <article class="main_program_act">
+            <i class="fa fa-hand-peace"></i>
+            <h3 class="program_act">Metal</h3>
+            <p class="program_act_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione earum accusamus excepturi dolores? Facere hic provident libero porro</p>
+          </article>
+          <article class="main_program_act">
+            <i class="fa fa-compact-disc"></i>
+            <h3 class="program_act">Rap</h3>
+            <p class="program_act_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione earum accusamus excepturi dolores? Facere hic provident libero porro</p>
+          </article>
+          <article class="main_program_act">
+            <i class="fab fa-deezer"></i>
+            <h3 class="program_act">Fusion</h3>
+            <p class="program_act_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione earum accusamus excepturi dolores? Facere hic provident libero porro</p>
+          </article>
+          <article class="main_program_act">
+            <i class="fa fa-microphone"></i>
+            <h3 class="program_act">Workshop</h3>
+            <p class="program_act_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione earum accusamus excepturi dolores? Facere hic provident libero porro</p>
+          </article>
+        </div>
         <button type="button" class="main_program_btn">Join The Festival</button>
       </section>
 
@@ -88,6 +107,13 @@
           <img class="partner_logo" src="img/partners/partner2.png" alt="partner_logo" />
           <img class="partner_logo" src="img/partners/partner3.png" alt="partner_logo" />
           <img class="partner_logo" src="img/partners/partner4.png" alt="partner_logo" />
+          <img class="partner_logo" src="img/partners/partner5.png" alt="partner_logo" />
+          <img class="partner_logo" src="img/partners/partner6.png" alt="partner_logo" />
+          <img class="partner_logo" src="img/partners/partner7.png" alt="partner_logo" />
+          <img class="partner_logo" src="img/partners/partner8.png" alt="partner_logo" />
+          <img class="partner_logo" src="img/partners/partner9.png" alt="partner_logo" />
+          <img class="partner_logo" src="img/partners/partner10.png" alt="partner_logo" />
+          <img class="partner_logo" src="img/partners/partner11.png" alt="partner_logo" />
         </div>
       </section>
       <!-- footer -->

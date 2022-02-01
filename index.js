@@ -29,6 +29,12 @@ const artistes = [
     about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eaque earum rem consequuntur blanditiis',
     picture: 'img/singers/hoba_hoba_spirit.jpg',
   },
+  {
+    name: 'Oum El Ghaït Benessahraoui',
+    style: 'Soul/Afrobeat',
+    about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eaque earum rem consequuntur blanditiis',
+    picture: 'img/singers/oum.jpg',
+  },
 ];
 
 const participantBtn = document.createElement('button');
@@ -110,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // mobile menu
 const menuButton = document.querySelector('.menu_btn');
-const mobileMenu = document.querySelector('.nav_menu');
+const mobileMenu = document.querySelector('.nav_menu_mobile');
 const remButton = document.querySelector('.fa-times');
 
 // transition styles
@@ -133,7 +139,7 @@ remButton.addEventListener('click', () => {
   menuButton.style.display = 'block';
 });
 
-document.querySelectorAll('.nav_link').forEach((link) => {
+document.querySelectorAll('.nav_link_mobile').forEach((link) => {
   link.addEventListener('click', () => {
     mobileMenu.style.left = '-800px';
     setTimeout(() => {

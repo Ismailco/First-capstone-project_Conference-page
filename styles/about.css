@@ -16,12 +16,11 @@
 }
 
 body {
-  /* background: #d3d3d3; */
   font-family: lato, sans-serif;
   font-size: 15px;
 }
 
-header {
+.header {
   background-color: #d3d3d3;
 }
 
@@ -30,9 +29,13 @@ header {
   outline: none;
   border: none;
   font-size: 25px;
-  padding-top: 20px;
+  margin-top: 20px;
   margin-left: 20px;
   color: #272a31;
+}
+
+.logo {
+  display: none;
 }
 
 .close_btn {
@@ -44,9 +47,21 @@ header {
 }
 
 .nav_menu {
+  display: none;
+}
+
+.nav_mobile {
+  display: none;
+}
+
+.top_nav {
+  display: none;
+}
+
+.nav_menu_mobile {
   z-index: 1;
   display: none;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -54,7 +69,7 @@ header {
   background-size: cover;
 }
 
-.nav {
+.nav_mobile {
   padding: 100px;
   display: flex;
   flex-direction: column;
@@ -64,15 +79,15 @@ header {
   top: 0;
   bottom: 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   list-style: none;
 }
 
-.nav_item {
+.nav_item_mobile {
   margin: 15px;
 }
 
-.nav_link {
+.nav_link_mobile {
   color: #272a31;
   font-size: 25px;
 }
@@ -88,7 +103,7 @@ header {
 .headline_container {
   padding-top: 100px;
   padding-left: 20px;
-  padding-bottom: 54px;
+  padding-bottom: 100px;
   background-color: rgba(211, 211, 211, 0.96);
   display: flex;
   flex-direction: column;
@@ -109,7 +124,7 @@ header {
   font-weight: 700;
   margin-top: 30px;
   font-family: cocogoose, sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 45px;
   color: #ec5242;
 }
@@ -153,7 +168,7 @@ header {
 .main_header {
   font-family: lato, sans-serif;
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 60px;
   color: #272a31;
   width: 200px;
 }
@@ -174,9 +189,9 @@ header {
 
 .main_logo {
   border: 1px solid #d3d3d3;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  width: 90%;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  width: 60%;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -193,6 +208,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .past_festivals_header {
@@ -207,7 +223,7 @@ header {
   border-color: #ec5242;
   width: 35px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .past_festivals_text {
@@ -216,6 +232,15 @@ header {
   color: #272a31;
   line-height: 25px;
   width: 80%;
+  margin-bottom: 50px;
+}
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .card_one {
@@ -290,14 +315,138 @@ header {
 
 /* footer */
 .footer {
+  padding: 20px;
   background-color: #fff;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  font-size: 20px;
+  align-items: flex-end;
+  font-size: 12px;
+  font-family: cocogoose, sans-serif;
   color: #3d3d3d;
 }
 
 .footer_logo {
-  width: 200px;
+  width: 100px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .top_nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: #272a31;
+  }
+
+  .top_nav_items {
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .top_nav_item {
+    margin: 10px;
+  }
+
+  .top_nav_link {
+    color: #d3d3d3;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .header {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav_menu {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    position: static;
+    background-image: none;
+  }
+
+  .nav {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    top: 0;
+    position: static;
+    width: 100vw;
+    list-style: none;
+    font-size: 10px;
+  }
+
+  .nav_item {
+    margin: 15px;
+  }
+
+  .nav_link {
+    font-size: 17px;
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .nav_link:hover {
+    cursor: pointer;
+    color: #ec5242;
+  }
+
+  .close_btn {
+    display: none !important;
+  }
+
+  .logo {
+    display: block;
+    width: 100px;
+  }
+
+  .menu_btn {
+    display: none;
+  }
+
+  .headline_header {
+    max-width: 700px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .card_container {
+    flex-direction: row;
+  }
+
+  .card {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  /* footer */
+  .footer {
+    background-color: #3d3d3d;
+    font-size: 15px;
+    color: #d3d3d3;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .footer_logo {
+    width: 150px;
+    margin-right: 200px;
+  }
 }
