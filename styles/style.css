@@ -156,8 +156,9 @@ header {
 /* program section */
 
 .main_section {
-  background-image: url(../img/Photo\ by\ Andrew\ Ridley\ on\ Unsplash.png);
+  background-image: url(../img/background3.png);
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,7 +192,7 @@ header {
   align-items: center;
   margin: 5px;
   padding: 20px;
-  background-color: rgba(39, 42, 49, 0.7);
+  background-color: rgba(52, 55, 65, 0.6);
   width: 95%;
 }
 
@@ -521,7 +522,7 @@ button:hover {
 
   .main_program_btn {
     background-color: transparent;
-    color: #272a31;
+    color: #d3d3d3;
     text-decoration: underline;
     font-size: 25px;
   }
