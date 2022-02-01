@@ -50,10 +50,6 @@ body {
   display: none;
 }
 
-.nav_mobile {
-  display: none;
-}
-
 .top_nav {
   display: none;
 }
@@ -102,7 +98,8 @@ body {
 
 .headline_container {
   padding-top: 100px;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 100px;
   background-color: rgba(211, 211, 211, 0.96);
   display: flex;
@@ -130,7 +127,7 @@ body {
 }
 
 .headline_description {
-  max-width: 550px;
+  max-width: 500px;
   margin-top: 50px;
   padding: 20px;
   line-height: 25px;
@@ -304,13 +301,15 @@ body {
 
 .partners_logos {
   padding: 30px;
+  width: 90%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .partner_logo {
-  width: 100px;
+  width: 150px;
 }
 
 /* footer */
@@ -367,6 +366,10 @@ button:hover {
     align-items: center;
   }
 
+  .nav_mobile {
+    display: none;
+  }
+
   .nav_menu {
     display: flex;
     flex-direction: row;
@@ -376,7 +379,7 @@ button:hover {
   }
 
   .nav {
-    padding: 0px;
+    padding: 1px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

@@ -51,10 +51,6 @@ header {
   display: none;
 }
 
-.nav_mobile {
-  display: none;
-}
-
 .top_nav {
   display: none;
 }
@@ -419,6 +415,10 @@ button:hover {
     align-items: center;
   }
 
+  .nav_mobile {
+    display: none;
+  }
+
   .nav_menu {
     display: flex;
     flex-direction: row;
@@ -428,7 +428,7 @@ button:hover {
   }
 
   .nav {
-    padding: 0px;
+    padding: 1px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -501,14 +501,14 @@ button:hover {
     max-width: 90%;
   }
 
-  .main_program_act:hover {
-    border: 2px solid #fff;
-  }
-
   .main_program_act {
     flex-direction: column;
     border: 2px solid transparent;
     text-align: center;
+  }
+
+  .main_program_act:hover {
+    border: 2px solid #fff;
   }
 
   .program_act {
