@@ -4,8 +4,11 @@
 
 > This is a portfolio project for Microverse curriculum using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. in the future I will use JavaScript to add some animation and functionality.
 
-![screenshot](img/screenshot2.png)
+## Screenshot
+
 ![screenshot](img/screenshot.png)
+![screenshot](img/screenshot2.png)
+![screenshot](img/screenshot3.png)
 
 ## Built With
 
