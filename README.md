@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio-Microverse
+# Marock Music Festival
 
-> This is a portfolio project for Microverse curriculum using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. in the future I will use JavaScript to add some animation and functionality.
+> This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the boulevard urban music festival in morocco
 
 ## Screenshot
 
